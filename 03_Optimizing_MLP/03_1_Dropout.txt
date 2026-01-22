@@ -1,0 +1,29 @@
+Concept of Dropout in Deep Learning
+
+Dropout is a regularization technique used in deep learning to prevent overfitting and improve a model’s ability to generalize to unseen 
+data. During training, dropout works by randomly “dropping out” (temporarily disabling) a fraction of neurons in a neural network, along 
+with their connections.This forces the network to learn more robust and distributed representations rather than relying too heavily on a few specific neurons.
+
+Definition of Dropout
+Dropout is a method in which, during each training iteration, some neurons are randomly set to zero with a fixed probability (called the dropout rate),
+so they do not participate in forward or backward propagation for that iteration.
+
+How it is Done
+A dropout rate (e.g., 0.2, 0.5) is chosen.
+During training, neurons are randomly deactivated according to this rate.
+During testing or inference, dropout is turned off, and all neurons are used, typically with scaled weights to maintain consistent output.
+
+Why it is Done
+To reduce overfitting by preventing complex co-adaptations of neurons.
+To make the network more robust and improve generalization on new data.
+To act like an ensemble of many smaller networks trained together.
+
+Advantages
+Reduces overfitting effectively.
+Improves generalization performance.
+Simple to implement and computationally efficient.
+
+Disadvantages
+Can slow down training convergence.
+Not always beneficial for very small datasets or certain architectures (e.g., some CNN layers).
+Requires tuning of the dropout rate for best performance.

@@ -1,0 +1,5 @@
+1: Concept of memoization is used ...while finding the backpropogation 
+2: During backpropogation we have to find derivatives again and again ....so we can stores values of already calculated derivatives 
+which will be used further 
+3: Here we save our time complexity ...on the cost of increased space 
+4: Backpropogation = Chain rule(to find derivatives) + Memoization 
